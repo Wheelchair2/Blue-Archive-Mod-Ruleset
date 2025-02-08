@@ -52,8 +52,8 @@
 				"quote": ""
 			},
 			{
-				"name": "R9C1",
-				"row": 9,
+				"name": "R10C1",
+				"row": 10,
 				"prerequisites": ["Halo Genesis"],
 				"quote": ""
 			},
@@ -79,9 +79,21 @@
 				"quote": ""
 			},
 			{
+				"name": "R4C2",
+				"row": 4,
+				"prerequisites": ["Halo Genesis"],
+				"quote": ""
+			},
+			{
+				"name": "R6C2",
+				"row": 6,
+				"prerequisites": ["Halo Genesis"],
+				"quote": ""
+			},
+			{
 				"name": "R8C2",
 				"row": 8,
-				"prerequisites": ["R8C1", "R9C1"],
+				"prerequisites": ["R7C1", "R8C1"],
 				"quote": ""
 			},
 		]
@@ -106,6 +118,12 @@
 				"quote": ""
 			},
 			{
+				"name": "R5C3",
+				"row": 5,
+				"prerequisites": ["R4C2", "R6C2"],
+				"quote": ""
+			},
+			{
 				"name": "R7C3",
 				"row": 7,
 				"prerequisites": ["R7C1"],
@@ -120,7 +138,7 @@
 			{
 				"name": "R10C3",
 				"row": 10,
-				"prerequisites": ["R9C1"],
+				"prerequisites": ["R8C2", "R10C1"],
 				"quote": ""
 			},
 		]
@@ -151,8 +169,8 @@
 				"quote": ""
 			},
 			{
-				"name": "R6C4",
-				"row": 6,
+				"name": "R7C4",
+				"row": 7,
 				"prerequisites": ["R7C3"],
 				"quote": ""
 			},
@@ -180,19 +198,19 @@
 			{
 				"name": "R2C5",
 				"row": 2,
-				"prerequisites": ["R2C4"],
+				"prerequisites": ["R2C4", "R4C4"],
 				"quote": ""
 			},
 			{
 				"name": "R5C5",
 				"row": 5,
-				"prerequisites": ["Halo Genesis"],
+				"prerequisites": ["R5C3", "R7C4"],
 				"quote": ""
 			},
 			{
 				"name": "R8C5",
 				"row": 8,
-				"prerequisites": ["R8C3"],
+				"prerequisites": ["R7C4", "R8C3"],
 				"quote": ""
 			},
 			{
@@ -225,7 +243,7 @@
 			{
 				"name": "R6C6",
 				"row": 6,
-				"prerequisites": ["R6C4", "R5C5"],
+				"prerequisites": ["R5C5"],
 				"quote": ""
 			},
 			{
@@ -258,7 +276,7 @@
 			{
 				"name": "R3C7",
 				"row": 3,
-				"prerequisites": ["R4C6"],
+				"prerequisites": ["R2C6", "R4C6"],
 				"quote": ""
 			},
 			{
@@ -276,7 +294,7 @@
 			{
 				"name": "R7C7",
 				"row": 7,
-				"prerequisites": ["R6C6"],
+				"prerequisites": ["R8C6", "R6C6"],
 				"quote": ""
 			},
 			{
@@ -372,7 +390,7 @@
 			{
 				"name": "R9C9",
 				"row": 9,
-				"prerequisites": ["R10C8"],
+				"prerequisites": ["R8C8", "R10C8"],
 				"quote": ""
 			},
 			{
@@ -399,13 +417,13 @@
 			{
 				"name": "R4C10",
 				"row": 4,
-				"prerequisites": ["R4C8"],
+				"prerequisites": ["R3C9", "R4C8"],
 				"quote": ""
 			},
 			{
 				"name": "R6C10",
 				"row": 6,
-				"prerequisites": ["R6C8"],
+				"prerequisites": ["R6C8", "R7C9",],
 				"quote": ""
 			},
 			{
@@ -504,6 +522,12 @@
 				"prerequisites": ["R7C11", "R9C10"],
 				"quote": ""
 			},
+			{
+				"name": "R10C12",
+				"row": 10,
+				"prerequisites": ["R10C11"],
+				"quote": ""
+			},
 		]
 	},
 	{
@@ -538,12 +562,6 @@
 				"quote": ""
 			},
 			{
-				"name": "R8C13",
-				"row": 8,
-				"prerequisites": ["R8C12"],
-				"quote": ""
-			},
-			{
 				"name": "R9C13",
 				"row": 9,
 				"prerequisites": ["R8C12"],
@@ -552,7 +570,7 @@
 			{
 				"name": "R10C13",
 				"row": 10,
-				"prerequisites": ["R10C11"],
+				"prerequisites": ["R10C12"],
 				"quote": ""
 			},
 		]
@@ -682,21 +700,81 @@
 		"wonderCost": 105,
 		"techs": [
 			{
-				"name": "1st Final Tech",
+				"name": "R2C17",
 				"row": 2,
-				"prerequisites": ["R1C16", "R2C16", "R3C16"],
+				"prerequisites": ["R1C16", "R2C16"],
 				"quote": ""
 			},
 			{
-				"name": "2nd Final Tech",
+				"name": "R3C17",
+				"row": 3,
+				"prerequisites": ["R3C16"],
+				"quote": ""
+			},
+			{
+				"name": "R5C17",
 				"row": 5,
-				"prerequisites": ["R4C12", "R6C12"],
+				"prerequisites": ["R4C12", "R6C12", "R3C16", "R7C16"],
 				"quote": ""
 			},
 			{
-				"name": "3rd Final Tech",
+				"name": "R8C17",
+				"row": 8,
+				"prerequisites": ["R7C16", "R8C16"],
+				"quote": ""
+			},
+			{
+				"name": "R9C17",
 				"row": 9,
-				"prerequisites": ["R7C16", "R8C16", "R9C15", "R10C16"],
+				"prerequisites": ["R9C15", "R10C16"],
+				"quote": ""
+			},
+		]
+	},
+	{
+		"columnNumber": 18,
+		"era": "Ninth era",
+		"techCost": 40,
+		"buildingCost": 70,
+		"wonderCost": 105,
+		"techs": [
+			{
+				"name": "R3C18",
+				"row": 3,
+				"prerequisites": ["R2C17", "R3C17"],
+				"quote": ""
+			},
+			{
+				"name": "R4C18",
+				"row": 4,
+				"prerequisites": ["R5C17"],
+				"quote": ""
+			},
+			{
+				"name": "R6C18",
+				"row": 6,
+				"prerequisites": ["R5C17"],
+				"quote": ""
+			},
+			{
+				"name": "R8C18",
+				"row": 8,
+				"prerequisites": ["R8C17", "R9C17"],
+				"quote": ""
+			},
+		]
+	},
+	{
+		"columnNumber": 19,
+		"era": "Tenth era",
+		"techCost": 40,
+		"buildingCost": 70,
+		"wonderCost": 105,
+		"techs": [
+			{
+				"name": "R5C19",
+				"row": 5,
+				"prerequisites": ["R3C18", "R4C18", "R6C18", "R8C18"],
 				"quote": ""
 			},
 		]
