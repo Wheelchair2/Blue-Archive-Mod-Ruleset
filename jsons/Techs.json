@@ -1,0 +1,704 @@
+[
+	{
+		"columnNumber": 0,
+		"era": "Ancient era",
+		"techCost": 20,
+		"buildingCost": 40,
+        "wonderCost": 50,
+		"techs": [
+			{
+				"name": "Halo Genesis",
+				"row": 5,
+				"quote": "",
+				"uniques": ["Starting tech"]
+			}
+		]
+	},
+	{
+		"columnNumber": 1,
+		"era": "Ancient era",
+		"techCost": 40,
+		"buildingCost": 70,
+		"wonderCost": 105,
+		"techs": [
+			{
+				"name": "R1C1",
+				"row": 1,
+				"prerequisites": ["Halo Genesis"],
+				"quote": ""
+			},
+			{
+				"name": "R2C1",
+				"row": 2,
+				"prerequisites": ["Halo Genesis"],
+				"quote": ""
+			},
+			{
+				"name": "R3C1",
+				"row": 3,
+				"prerequisites": ["Halo Genesis"],
+				"quote": ""
+			},
+			{
+				"name": "R7C1",
+				"row": 7,
+				"prerequisites": ["Halo Genesis"],
+				"quote": ""
+			},
+			{
+				"name": "R8C1",
+				"row": 8,
+				"prerequisites": ["Halo Genesis"],
+				"quote": ""
+			},
+			{
+				"name": "R9C1",
+				"row": 9,
+				"prerequisites": ["Halo Genesis"],
+				"quote": ""
+			},
+		]
+	},
+	{
+		"columnNumber": 2,
+		"era": "Ancient era",
+		"techCost": 40,
+		"buildingCost": 70,
+		"wonderCost": 105,
+		"techs": [
+			{
+				"name": "R1C2",
+				"row": 1,
+				"prerequisites": ["R1C1", "R2C1"],
+				"quote": ""
+			},
+			{
+				"name": "R2C2",
+				"row": 2,
+				"prerequisites": ["R2C1"],
+				"quote": ""
+			},
+			{
+				"name": "R8C2",
+				"row": 8,
+				"prerequisites": ["R8C1", "R9C1"],
+				"quote": ""
+			},
+		]
+	},
+	{
+		"columnNumber": 3,
+		"era": "Second era",
+		"techCost": 40,
+		"buildingCost": 70,
+		"wonderCost": 105,
+		"techs": [
+			{
+				"name": "R1C3",
+				"row": 1,
+				"prerequisites": ["R1C2"],
+				"quote": ""
+			},
+			{
+				"name": "R3C3",
+				"row": 3,
+				"prerequisites": ["R3C1"],
+				"quote": ""
+			},
+			{
+				"name": "R7C3",
+				"row": 7,
+				"prerequisites": ["R7C1"],
+				"quote": ""
+			},
+			{
+				"name": "R8C3",
+				"row": 8,
+				"prerequisites": ["R8C2"],
+				"quote": ""
+			},
+			{
+				"name": "R10C3",
+				"row": 10,
+				"prerequisites": ["R9C1"],
+				"quote": ""
+			},
+		]
+	},
+	{
+		"columnNumber": 4,
+		"era": "Second era",
+		"techCost": 40,
+		"buildingCost": 70,
+		"wonderCost": 105,
+		"techs": [
+			{
+				"name": "R1C4",
+				"row": 1,
+				"prerequisites": ["R1C3"],
+				"quote": ""
+			},
+			{
+				"name": "R2C4",
+				"row": 2,
+				"prerequisites": ["R1C3"],
+				"quote": ""
+			},
+			{
+				"name": "R4C4",
+				"row": 4,
+				"prerequisites": ["R3C3"],
+				"quote": ""
+			},
+			{
+				"name": "R6C4",
+				"row": 6,
+				"prerequisites": ["R7C3"],
+				"quote": ""
+			},
+			{
+				"name": "R9C4",
+				"row": 9,
+				"prerequisites": ["R10C3"],
+				"quote": ""
+			},
+			{
+				"name": "R10C4",
+				"row": 10,
+				"prerequisites": ["R10C3"],
+				"quote": ""
+			},
+		]
+	},
+	{
+		"columnNumber": 5,
+		"era": "Third era",
+		"techCost": 40,
+		"buildingCost": 70,
+		"wonderCost": 105,
+		"techs": [
+			{
+				"name": "R2C5",
+				"row": 2,
+				"prerequisites": ["R2C4"],
+				"quote": ""
+			},
+			{
+				"name": "R5C5",
+				"row": 5,
+				"prerequisites": ["Halo Genesis"],
+				"quote": ""
+			},
+			{
+				"name": "R8C5",
+				"row": 8,
+				"prerequisites": ["R8C3"],
+				"quote": ""
+			},
+			{
+				"name": "R10C5",
+				"row": 10,
+				"prerequisites": ["R10C4"],
+				"quote": ""
+			},
+		]
+	},
+	{
+		"columnNumber": 6,
+		"era": "Third era",
+		"techCost": 40,
+		"buildingCost": 70,
+		"wonderCost": 105,
+		"techs": [
+			{
+				"name": "R2C6",
+				"row": 2,
+				"prerequisites": ["R2C5"],
+				"quote": ""
+			},
+			{
+				"name": "R4C6",
+				"row": 4,
+				"prerequisites": ["R4C4", "R5C5"],
+				"quote": ""
+			},
+			{
+				"name": "R6C6",
+				"row": 6,
+				"prerequisites": ["R6C4", "R5C5"],
+				"quote": ""
+			},
+			{
+				"name": "R8C6",
+				"row": 8,
+				"prerequisites": ["R8C5"],
+				"quote": ""
+			},
+			{
+				"name": "R9C6",
+				"row": 9,
+				"prerequisites": ["R9C4", "R10C5"],
+				"quote": ""
+			},
+		]
+	},
+	{
+		"columnNumber": 7,
+		"era": "Fourth era",
+		"techCost": 40,
+		"buildingCost": 70,
+		"wonderCost": 105,
+		"techs": [
+			{
+				"name": "R1C7",
+				"row": 1,
+				"prerequisites": ["R1C4", "R2C6"],
+				"quote": ""
+			},
+			{
+				"name": "R3C7",
+				"row": 3,
+				"prerequisites": ["R4C6"],
+				"quote": ""
+			},
+			{
+				"name": "R4C7",
+				"row": 4,
+				"prerequisites": ["R4C6"],
+				"quote": ""
+			},
+			{
+				"name": "R6C7",
+				"row": 6,
+				"prerequisites": ["R6C6"],
+				"quote": ""
+			},
+			{
+				"name": "R7C7",
+				"row": 7,
+				"prerequisites": ["R6C6"],
+				"quote": ""
+			},
+			{
+				"name": "R9C7",
+				"row": 9,
+				"prerequisites": ["R9C6"],
+				"quote": ""
+			},
+			{
+				"name": "R10C7",
+				"row": 10,
+				"prerequisites": ["R10C5"],
+				"quote": ""
+			},
+		]
+	},
+	{
+		"columnNumber": 8,
+		"era": "Fourth era",
+		"techCost": 40,
+		"buildingCost": 70,
+		"wonderCost": 105,
+		"techs": [
+			{
+				"name": "R1C8",
+				"row": 1,
+				"prerequisites": ["R1C7"],
+				"quote": ""
+			},
+			{
+				"name": "R4C8",
+				"row": 4,
+				"prerequisites": ["R4C7"],
+				"quote": ""
+			},
+			{
+				"name": "R5C8",
+				"row": 5,
+				"prerequisites": ["R4C7", "R6C7"],
+				"quote": ""
+			},
+			{
+				"name": "R6C8",
+				"row": 6,
+				"prerequisites": ["R6C7"],
+				"quote": ""
+			},
+			{
+				"name": "R8C8",
+				"row": 8,
+				"prerequisites": ["R8C6"],
+				"quote": ""
+			},
+			{
+				"name": "R10C8",
+				"row": 10,
+				"prerequisites": ["R10C7", "R9C7"],
+				"quote": ""
+			},
+		]
+	},
+	{
+		"columnNumber": 9,
+		"era": "Fifth era",
+		"techCost": 40,
+		"buildingCost": 70,
+		"wonderCost": 105,
+		"techs": [
+			{
+				"name": "R1C9",
+				"row": 1,
+				"prerequisites": ["R1C8"],
+				"quote": ""
+			},
+			{
+				"name": "R3C9",
+				"row": 3,
+				"prerequisites": ["R3C7"],
+				"quote": ""
+			},
+			{
+				"name": "R5C9",
+				"row": 5,
+				"prerequisites": ["R5C8"],
+				"quote": ""
+			},
+			{
+				"name": "R7C9",
+				"row": 7,
+				"prerequisites": ["R7C7"],
+				"quote": ""
+			},
+			{
+				"name": "R9C9",
+				"row": 9,
+				"prerequisites": ["R10C8"],
+				"quote": ""
+			},
+			{
+				"name": "R10C9",
+				"row": 10,
+				"prerequisites": ["R10C8"],
+				"quote": ""
+			},
+		]
+	},
+	{
+		"columnNumber": 10,
+		"era": "Fifth era",
+		"techCost": 40,
+		"buildingCost": 70,
+		"wonderCost": 105,
+		"techs": [
+			{
+				"name": "R3C10",
+				"row": 3,
+				"prerequisites": ["R3C9"],
+				"quote": ""
+			},
+			{
+				"name": "R4C10",
+				"row": 4,
+				"prerequisites": ["R4C8"],
+				"quote": ""
+			},
+			{
+				"name": "R6C10",
+				"row": 6,
+				"prerequisites": ["R6C8"],
+				"quote": ""
+			},
+			{
+				"name": "R7C10",
+				"row": 7,
+				"prerequisites": ["R7C9"],
+				"quote": ""
+			},
+			{
+				"name": "R9C10",
+				"row": 9,
+				"prerequisites": ["R9C9"],
+				"quote": ""
+			},
+			{
+				"name": "R10C10",
+				"row": 10,
+				"prerequisites": ["R10C9"],
+				"quote": ""
+			},
+		]
+	},
+	{
+		"columnNumber": 11,
+		"era": "Sixth era",
+		"techCost": 40,
+		"buildingCost": 70,
+		"wonderCost": 105,
+		"techs": [
+			{
+				"name": "R1C11",
+				"row": 1,
+				"prerequisites": ["R1C9"],
+				"quote": ""
+			},
+			{
+				"name": "R3C11",
+				"row": 3,
+				"prerequisites": ["R3C10"],
+				"quote": ""
+			},
+			{
+				"name": "R5C11",
+				"row": 5,
+				"prerequisites": ["R4C10", "R5C9", "R6C10"],
+				"quote": ""
+			},
+			{
+				"name": "R7C11",
+				"row": 7,
+				"prerequisites": ["R7C10"],
+				"quote": ""
+			},
+			{
+				"name": "R10C11",
+				"row": 10,
+				"prerequisites": ["R10C10"],
+				"quote": ""
+			},
+		]
+	},
+	{
+		"columnNumber": 12,
+		"era": "Sixth era",
+		"techCost": 40,
+		"buildingCost": 70,
+		"wonderCost": 105,
+		"techs": [
+			{
+				"name": "R2C12",
+				"row": 2,
+				"prerequisites": ["R1C11", "R3C11"],
+				"quote": ""
+			},
+			{
+				"name": "R4C12",
+				"row": 4,
+				"prerequisites": ["R4C11"],
+				"quote": ""
+			},
+			{
+				"name": "R4C12",
+				"row": 4,
+				"prerequisites": ["R5C11"],
+				"quote": ""
+			},
+			{
+				"name": "R6C12",
+				"row": 6,
+				"prerequisites": ["R5C11"],
+				"quote": ""
+			},
+			{
+				"name": "R8C12",
+				"row": 8,
+				"prerequisites": ["R7C11", "R9C10"],
+				"quote": ""
+			},
+		]
+	},
+	{
+		"columnNumber": 13,
+		"era": "Seventh era",
+		"techCost": 40,
+		"buildingCost": 70,
+		"wonderCost": 105,
+		"techs": [
+			{
+				"name": "R1C13",
+				"row": 1,
+				"prerequisites": ["R2C12"],
+				"quote": ""
+			},
+			{
+				"name": "R2C13",
+				"row": 2,
+				"prerequisites": ["R2C12"],
+				"quote": ""
+			},
+			{
+				"name": "R3C13",
+				"row": 3,
+				"prerequisites": ["R2C12"],
+				"quote": ""
+			},
+			{
+				"name": "R7C13",
+				"row": 7,
+				"prerequisites": ["R8C12"],
+				"quote": ""
+			},
+			{
+				"name": "R8C13",
+				"row": 8,
+				"prerequisites": ["R8C12"],
+				"quote": ""
+			},
+			{
+				"name": "R9C13",
+				"row": 9,
+				"prerequisites": ["R8C12"],
+				"quote": ""
+			},
+			{
+				"name": "R10C13",
+				"row": 10,
+				"prerequisites": ["R10C11"],
+				"quote": ""
+			},
+		]
+	},
+	{
+		"columnNumber": 14,
+		"era": "Seventh era",
+		"techCost": 40,
+		"buildingCost": 70,
+		"wonderCost": 105,
+		"techs": [
+			{
+				"name": "R2C14",
+				"row": 2,
+				"prerequisites": ["R2C13"],
+				"quote": ""
+			},
+			{
+				"name": "R3C14",
+				"row": 3,
+				"prerequisites": ["R3C13"],
+				"quote": ""
+			},
+			{
+				"name": "R7C14",
+				"row": 7,
+				"prerequisites": ["R7C13"],
+				"quote": ""
+			},
+			{
+				"name": "R9C14",
+				"row": 9,
+				"prerequisites": ["R9C13"],
+				"quote": ""
+			},
+		]
+	},
+	{
+		"columnNumber": 15,
+		"era": "Eighth era",
+		"techCost": 40,
+		"buildingCost": 70,
+		"wonderCost": 105,
+		"techs": [
+			{
+				"name": "R1C15",
+				"row": 1,
+				"prerequisites": ["R1C13"],
+				"quote": ""
+			},
+			{
+				"name": "R3C15",
+				"row": 3,
+				"prerequisites": ["R3C14"],
+				"quote": ""
+			},
+			{
+				"name": "R8C15",
+				"row": 8,
+				"prerequisites": ["R9C14"],
+				"quote": ""
+			},
+			{
+				"name": "R9C15",
+				"row": 9,
+				"prerequisites": ["R9C14"],
+				"quote": ""
+			},
+			{
+				"name": "R10C15",
+				"row": 10,
+				"prerequisites": ["R10C13", "R9C14"],
+				"quote": ""
+			},
+		]
+	},
+	{
+		"columnNumber": 16,
+		"era": "Eighth era",
+		"techCost": 40,
+		"buildingCost": 70,
+		"wonderCost": 105,
+		"techs": [
+			{
+				"name": "R1C16",
+				"row": 1,
+				"prerequisites": ["R1C15"],
+				"quote": ""
+			},
+			{
+				"name": "R2C16",
+				"row": 2,
+				"prerequisites": ["R2C14", "R3C15"],
+				"quote": ""
+			},
+			{
+				"name": "R3C16",
+				"row": 3,
+				"prerequisites": ["R3C15"],
+				"quote": ""
+			},
+			{
+				"name": "R7C16",
+				"row": 7,
+				"prerequisites": ["R7C14", "R8C15"],
+				"quote": ""
+			},
+			{
+				"name": "R8C16",
+				"row": 8,
+				"prerequisites": ["R8C15"],
+				"quote": ""
+			},
+			{
+				"name": "R10C16",
+				"row": 10,
+				"prerequisites": ["R10C15"],
+				"quote": ""
+			},
+		]
+	},
+	{
+		"columnNumber": 17,
+		"era": "Ninth era",
+		"techCost": 40,
+		"buildingCost": 70,
+		"wonderCost": 105,
+		"techs": [
+			{
+				"name": "1st Final Tech",
+				"row": 2,
+				"prerequisites": ["R1C16", "R2C16", "R3C16"],
+				"quote": ""
+			},
+			{
+				"name": "2nd Final Tech",
+				"row": 5,
+				"prerequisites": ["R4C12", "R6C12"],
+				"quote": ""
+			},
+			{
+				"name": "3rd Final Tech",
+				"row": 9,
+				"prerequisites": ["R7C16", "R8C16", "R9C15", "R10C16"],
+				"quote": ""
+			},
+		]
+	},
+]
