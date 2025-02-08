@@ -102,7 +102,7 @@
 			{
 				"name": "R3C3",
 				"row": 3,
-				"prerequisites": ["R3C1"],
+				"prerequisites": ["R2C2", "R3C1"],
 				"quote": ""
 			},
 			{
@@ -366,7 +366,7 @@
 			{
 				"name": "R7C9",
 				"row": 7,
-				"prerequisites": ["R7C7"],
+				"prerequisites": ["R7C7", "R8C8"],
 				"quote": ""
 			},
 			{
