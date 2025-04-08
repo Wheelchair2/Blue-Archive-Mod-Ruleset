@@ -1,4 +1,174 @@
 [
+	// BLUE ARCHIVE
+	// Bonus resources
+	{
+		"name": "Corn",
+		"resourceType": "Bonus",
+		"terrainsCanBeFoundOn": ["Grassland", "Plains"],
+		"food": 1,
+		"improvement": "Plantation",
+		"improvementStats": {"food": 1,"production": 1},
+		"uniques": ["Generated on every [25] tiles <in [{Featureless} {Plains}] tiles>"],
+	},
+	{
+		"name": "Rice",
+		"resourceType": "Bonus",
+		"terrainsCanBeFoundOn": ["Grassland", "Plains", "Hill"],
+		"food": 1,
+		"improvement": "Farm",
+		"improvementStats": {"food": 1,"production": 1},
+		"uniques": ["Generated on every [5] tiles <in [{Fresh Water} {Plains] tiles>",
+					"Generated on every [5] tiles <in [{Fresh Water} {Grassland}] tiles>"],
+	},
+	{
+		"name": "Shrimp",
+		"resourceType": "Bonus",
+		"terrainsCanBeFoundOn": ["Fish"],
+		"food": 1,
+		"improvedBy": ["Fishing Boats"],
+		"improvementStats": {"food": 1},
+		"uniques": ["Guaranteed with Strategic Balance resource option",
+					"Generated with weight [40] <in [{Coast} {Fish}] tiles>",
+					"Minor deposits generated with weight [15] <in [{Coast} {Fish}] tiles>",
+					"Minor deposits generated with weight [60] <in [Sunken Ruins] tiles>"],
+		"majorDepositAmount": {"sparse": 4, "default": 4, "abundant": 6},
+		"minorDepositAmount": {"sparse": 1, "default": 2, "abundant": 3}
+	},
+	{
+		"name": "Tuna",
+		"resourceType": "Bonus",
+		"terrainsCanBeFoundOn": ["Fish"],
+		"food": 1,
+		"improvedBy": ["Fishing Boats"],
+		"improvementStats": {"food": 1},
+		"uniques": ["Guaranteed with Strategic Balance resource option",
+					"Generated with weight [10] <in [{Coast} {Fish}] tiles>",
+					"Minor deposits generated with weight [6] <in [{Coast} {Fish}] tiles>",
+					"Minor deposits generated with weight [30] <in [Sunken Ruins] tiles>"],
+		"majorDepositAmount": {"sparse": 4, "default": 4, "abundant": 6},
+		"minorDepositAmount": {"sparse": 1, "default": 2, "abundant": 3}
+	},
+	{
+		"name": "Salmon",
+		"resourceType": "Bonus",
+		"terrainsCanBeFoundOn": ["Fish","Lakes"],
+		"food": 1,
+		"improvedBy": ["Fishing Boats"],
+		"improvementStats": {"food": 1},
+		"uniques": ["Guaranteed with Strategic Balance resource option",
+					"Generated with weight [40] <in [{Coast} {Fish}] tiles>",
+					"Generated with weight [5] <in [Lakes] tiles>",
+					"Minor deposits generated with weight [20] <in [{Coast} {Fish}] tiles>",
+					"Minor deposits generated with weight [50] <in [Sunken Ruins] tiles>"],
+		"majorDepositAmount": {"sparse": 4, "default": 4, "abundant": 6},
+		"minorDepositAmount": {"sparse": 1, "default": 2, "abundant": 3}
+	},
+	
+	//Luxury resources
+	{
+		"name": "Pelt",
+		"resourceType": "Luxury",
+		"terrainsCanBeFoundOn": [
+			"Snow",
+			"Tundra",
+			"Forest",
+			"Hill"
+		],
+		"food": 2,
+		"gold": 2,
+		"improvedBy": ["Camp"],
+		"improvementStats": {
+			"gold": 1
+		},
+		"uniques": [
+			"Generated with weight [5] <in [Tundra] Regions>",
+			"Generated with weight [5] <in [Forest] Regions>",
+			"Generated with weight [10] <in [Hill] Regions>",
+			"Generated with weight [35] <in [Hybrid] Regions>",
+			"Generated near City States with weight [20]",
+			"Doesn't generate naturally <in [Grassland] tiles>",
+			"Doesn't generate naturally <in [Plains] tiles>",
+			"Doesn't generate naturally <in [Desert] tiles>"
+		]
+	},
+	{
+		"name": "Hare",
+		"resourceType": "Luxury",
+		"terrainsCanBeFoundOn": [
+			"Snow",
+			"Tundra",
+			"Forest"
+		],
+		"food": 1,
+		"gold": 2,
+		"improvedBy": ["Camp"],
+		"improvementStats": {
+			"gold": 1
+		},
+		"uniques": [
+			"Generated with weight [5] <in [Tundra] Regions>",
+			"Generated with weight [25] <in [Forest] Regions>",
+			"Generated near City States with weight [20]",
+			"Doesn't generate naturally <in [Grassland] tiles>",
+			"Doesn't generate naturally <in [Plains] tiles>",
+			"Doesn't generate naturally <in [Desert] tiles>"
+		]
+	},
+	{
+		"name": "Lemon",
+		"resourceType": "Luxury",
+		"terrainsCanBeFoundOn": ["Jungle","Forest","Marsh"],
+		"gold": 2,
+		"improvement": "Plantation",
+		"uniques": ["Generated with weight [30] <in [Jungle] Regions>",
+					"Generated with weight [10] <in [Forest] Regions>",
+					"Generated with weight [10] <in [Plains] Regions>",
+					"Generated with weight [10] <in [Grassland] Regions>",
+					"Generated with weight [10] <in [Hybrid] Regions>",
+					"Generated near City States with weight [15]",
+					"Doesn't generate naturally <in [Hill] tiles>",
+					"Doesn't generate naturally <in [{Tundra} {Forest}] tiles>"]
+	},
+	{
+		"name": "Grapes",
+		"resourceType": "Luxury",
+		"terrainsCanBeFoundOn": ["Grassland","Plains"],
+		"gold": 2,
+		"improvement": "Plantation",
+		"uniques": ["Generated with weight [35] <in [Plains] Regions>",
+					"Generated with weight [15] <in [Hybrid] Regions>",
+					"Generated near City States with weight [10]"]
+	},
+	{
+		"name": "Tea",
+		"resourceType": "Luxury",
+		"terrainsCanBeFoundOn": ["Plains","Grassland"],
+		"gold": 2,
+		"improvement": "Plantation",
+		"improvementStats": {"gold": 1},
+		"uniques": ["Generated with weight [30] <in [Plains] Regions>",
+					"Generated with weight [30] <in [Grassland] Regions>",
+					"Generated near City States with weight [10]"]
+	},
+	{
+		"name": "Coffee",
+		"resourceType": "Luxury",
+		"terrainsCanBeFoundOn": ["Plains","Grassland","Desert","Hill"],
+		"gold": 2,
+		"improvement": "Plantation",
+		"improvementStats": {"gold": 1},
+		"uniques": [
+					"Generated with weight [30] <in [Hybrid] Regions>",
+					"Generated with weight [26] <in [Hill] tiles>",
+					"Generated with weight [30] <in [Desert] Regions>",
+					"Generated near City States with weight [10]"]
+	},
+	
+	
+	
+	
+	///////////////////////////
+	
 	// Bonus resources
 	{
 		"name": "Cattle",
@@ -66,6 +236,7 @@
 					"Generated on every [15] tiles <in [{Featureless} {Tundra}] tiles>",
 					"Generated on every [19] tiles <in [{Featureless} {Desert}] tiles>"]
 	},
+	/* //Fish is removed as it is turned into a terrain feature
 	{
 		"name": "Fish",
 		"resourceType": "Bonus",
@@ -74,6 +245,7 @@
 		"improvement": "Fishing Boats",
 		"uniques": ["Generated on every [10] tiles <in [{Featureless} {Coast}] tiles>"]
 	},
+	*/
 	/*
 	{
 		"name": "Bison",
@@ -86,6 +258,7 @@
 	*/
 
 	// Strategic resources
+	/* //Horses are removed
 	{
 		"name": "Horses",
 		"resourceType": "Strategic",
@@ -105,6 +278,7 @@
 		"majorDepositAmount": {"sparse": 4, "default": 4, "abundant": 6},
 		"minorDepositAmount": {"sparse": 1, "default": 2, "abundant": 3}
 	},
+	*/
 	{
 		"name": "Iron",
 		"resourceType": "Strategic",

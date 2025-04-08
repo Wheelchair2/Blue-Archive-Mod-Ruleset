@@ -7,7 +7,7 @@
         "wonderCost": 50,
 		"techs": [
 			{
-				"name": "Halo Genesis",
+				"name": "Simple Classroom",
 				"row": 5,
 				"quote": "",
 				"uniques": ["Starting tech"]
@@ -22,39 +22,39 @@
 		"wonderCost": 105,
 		"techs": [
 			{
-				"name": "R1C1",
+				"name": "Chalk And Board",
 				"row": 1,
-				"prerequisites": ["Halo Genesis"],
+				"prerequisites": ["Simple Classroom"],
 				"quote": ""
 			},
 			{
-				"name": "R2C1",
+				"name": "Snack Distribution",
 				"row": 2,
-				"prerequisites": ["Halo Genesis"],
+				"prerequisites": ["Simple Classroom"],
 				"quote": ""
 			},
 			{
-				"name": "R3C1",
+				"name": "Mediation Council",
 				"row": 3,
-				"prerequisites": ["Halo Genesis"],
+				"prerequisites": ["Simple Classroom"],
 				"quote": ""
 			},
 			{
-				"name": "R7C1",
+				"name": "Basic Construction",
 				"row": 7,
-				"prerequisites": ["Halo Genesis"],
+				"prerequisites": ["Simple Classroom"],
 				"quote": ""
 			},
 			{
-				"name": "R8C1",
+				"name": "Night Patrol",
 				"row": 8,
-				"prerequisites": ["Halo Genesis"],
+				"prerequisites": ["Simple Classroom"],
 				"quote": ""
 			},
 			{
-				"name": "R9C1",
-				"row": 9,
-				"prerequisites": ["Halo Genesis"],
+				"name": "Standard Rulebook",
+				"row": 10,
+				"prerequisites": ["Simple Classroom"],
 				"quote": ""
 			},
 		]
@@ -67,21 +67,33 @@
 		"wonderCost": 105,
 		"techs": [
 			{
-				"name": "R1C2",
+				"name": "Open Canteens",
 				"row": 1,
-				"prerequisites": ["R1C1", "R2C1"],
+				"prerequisites": ["Chalk And Board", "Snack Distribution"],
 				"quote": ""
 			},
 			{
-				"name": "R2C2",
+				"name": "Foraging Economy",
 				"row": 2,
-				"prerequisites": ["R2C1"],
+				"prerequisites": ["Snack Distribution"],
 				"quote": ""
 			},
 			{
-				"name": "R8C2",
+				"name": "Crank Power",
+				"row": 4,
+				"prerequisites": ["Simple Classroom"],
+				"quote": ""
+			},
+			{
+				"name": "Sewing Guild",
+				"row": 6,
+				"prerequisites": ["Simple Classroom"],
+				"quote": ""
+			},
+			{
+				"name": "Bulletin Board",
 				"row": 8,
-				"prerequisites": ["R8C1", "R9C1"],
+				"prerequisites": ["Basic Construction", "Night Patrol"],
 				"quote": ""
 			},
 		]
@@ -94,33 +106,39 @@
 		"wonderCost": 105,
 		"techs": [
 			{
-				"name": "R1C3",
+				"name": "Filtration Lab",
 				"row": 1,
-				"prerequisites": ["R1C2"],
+				"prerequisites": ["Open Canteens"],
 				"quote": ""
 			},
 			{
-				"name": "R3C3",
+				"name": "Role Hierarchy",
 				"row": 3,
-				"prerequisites": ["R3C1"],
+				"prerequisites": ["Foraging Economy", "Mediation Council"],
 				"quote": ""
 			},
 			{
-				"name": "R7C3",
+				"name": "Mechanical Utility",
+				"row": 5,
+				"prerequisites": ["Crank Power", "Sewing Guild"],
+				"quote": ""
+			},
+			{
+				"name": "Construction Comittee",
 				"row": 7,
-				"prerequisites": ["R7C1"],
+				"prerequisites": ["Basic Construction"],
 				"quote": ""
 			},
 			{
-				"name": "R8C3",
+				"name": "Courier Network",
 				"row": 8,
-				"prerequisites": ["R8C2"],
+				"prerequisites": ["Bulletin Board"],
 				"quote": ""
 			},
 			{
-				"name": "R10C3",
+				"name": "Peacekeeping Agents",
 				"row": 10,
-				"prerequisites": ["R9C1"],
+				"prerequisites": ["Bulletin Board", "Standard Rulebook"],
 				"quote": ""
 			},
 		]
@@ -133,39 +151,40 @@
 		"wonderCost": 105,
 		"techs": [
 			{
-				"name": "R1C4",
+				"name": "Practiced Chemistry",
 				"row": 1,
-				"prerequisites": ["R1C3"],
+				"prerequisites": ["Filtration Lab"],
 				"quote": ""
 			},
 			{
-				"name": "R2C4",
+				"name": "Combustion Stove",
 				"row": 2,
-				"prerequisites": ["R1C3"],
+				"prerequisites": ["Filtration Lab"],
+				"uniques": ["Discover [Industrialization]"],
 				"quote": ""
 			},
 			{
-				"name": "R4C4",
+				"name": "Private Business",
 				"row": 4,
-				"prerequisites": ["R3C3"],
+				"prerequisites": ["Role Hierarchy"],
 				"quote": ""
 			},
 			{
-				"name": "R6C4",
-				"row": 6,
-				"prerequisites": ["R7C3"],
+				"name": "Campus",
+				"row": 7,
+				"prerequisites": ["Construction Comittee"],
 				"quote": ""
 			},
 			{
-				"name": "R9C4",
+				"name": "Crafting Chamber",
 				"row": 9,
-				"prerequisites": ["R10C3"],
+				"prerequisites": ["Peacekeeping Agents"],
 				"quote": ""
 			},
 			{
-				"name": "R10C4",
+				"name": "Common Weaponry",
 				"row": 10,
-				"prerequisites": ["R10C3"],
+				"prerequisites": ["Peacekeeping Agents"],
 				"quote": ""
 			},
 		]
@@ -178,27 +197,27 @@
 		"wonderCost": 105,
 		"techs": [
 			{
-				"name": "R2C5",
+				"name": "Basic Shipbuilding",
 				"row": 2,
-				"prerequisites": ["R2C4"],
+				"prerequisites": ["Combustion Stove", "Private Business"],
 				"quote": ""
 			},
 			{
-				"name": "R5C5",
+				"name": "Electricity",
 				"row": 5,
-				"prerequisites": ["Halo Genesis"],
+				"prerequisites": ["Mechanical Utility", "Campus"],
 				"quote": ""
 			},
 			{
-				"name": "R8C5",
+				"name": "Cart Railroads",
 				"row": 8,
-				"prerequisites": ["R8C3"],
+				"prerequisites": ["Campus", "Courier Network"],
 				"quote": ""
 			},
 			{
-				"name": "R10C5",
+				"name": "Lawmaking",
 				"row": 10,
-				"prerequisites": ["R10C4"],
+				"prerequisites": ["Common Weaponry"],
 				"quote": ""
 			},
 		]
@@ -211,33 +230,34 @@
 		"wonderCost": 105,
 		"techs": [
 			{
-				"name": "R2C6",
+				"name": "Expedition Division",
 				"row": 2,
-				"prerequisites": ["R2C5"],
+				"prerequisites": ["Basic Shipbuilding"],
 				"quote": ""
 			},
 			{
-				"name": "R4C6",
+				"name": "Digital Clock",
 				"row": 4,
-				"prerequisites": ["R4C4", "R5C5"],
+				"prerequisites": ["Private Business", "Electricity"],
 				"quote": ""
 			},
 			{
-				"name": "R6C6",
+				"name": "Battery Belts",
 				"row": 6,
-				"prerequisites": ["R6C4", "R5C5"],
+				"prerequisites": ["Electricity"],
 				"quote": ""
 			},
 			{
-				"name": "R8C6",
+				"name": "Public Transit",
 				"row": 8,
-				"prerequisites": ["R8C5"],
+				"prerequisites": ["Cart Railroads"],
 				"quote": ""
 			},
 			{
-				"name": "R9C6",
+				"name": "Industrialization",
 				"row": 9,
-				"prerequisites": ["R9C4", "R10C5"],
+				"prerequisites": ["Crafting Chamber", "Lawmaking"],
+				"uniques": ["Only available <upon discovering [Combustion Stove] technology>"],
 				"quote": ""
 			},
 		]
@@ -250,45 +270,45 @@
 		"wonderCost": 105,
 		"techs": [
 			{
-				"name": "R1C7",
+				"name": "Weather Forecast",
 				"row": 1,
-				"prerequisites": ["R1C4", "R2C6"],
+				"prerequisites": ["Practiced Chemistry", "Expedition Division"],
 				"quote": ""
 			},
 			{
-				"name": "R3C7",
+				"name": "Radio Towers",
 				"row": 3,
-				"prerequisites": ["R4C6"],
+				"prerequisites": ["Expedition Division", "Digital Clock"],
 				"quote": ""
 			},
 			{
-				"name": "R4C7",
+				"name": "Catography Drones",
 				"row": 4,
-				"prerequisites": ["R4C6"],
+				"prerequisites": ["Digital Clock"],
 				"quote": ""
 			},
 			{
-				"name": "R6C7",
+				"name": "Modern Vehicles",
 				"row": 6,
-				"prerequisites": ["R6C6"],
+				"prerequisites": ["Battery Belts"],
 				"quote": ""
 			},
 			{
-				"name": "R7C7",
+				"name": "Subway Train",
 				"row": 7,
-				"prerequisites": ["R6C6"],
+				"prerequisites": ["Public Transit", "Battery Belts"],
 				"quote": ""
 			},
 			{
-				"name": "R9C7",
+				"name": "Urban Planning",
 				"row": 9,
-				"prerequisites": ["R9C6"],
+				"prerequisites": ["Industrialization"],
 				"quote": ""
 			},
 			{
-				"name": "R10C7",
+				"name": "Common Policing",
 				"row": 10,
-				"prerequisites": ["R10C5"],
+				"prerequisites": ["Lawmaking"],
 				"quote": ""
 			},
 		]
@@ -301,39 +321,39 @@
 		"wonderCost": 105,
 		"techs": [
 			{
-				"name": "R1C8",
+				"name": "Seafaring Protocols",
 				"row": 1,
-				"prerequisites": ["R1C7"],
+				"prerequisites": ["Weather Forecast"],
 				"quote": ""
 			},
 			{
-				"name": "R4C8",
+				"name": "Continental Campus",
 				"row": 4,
-				"prerequisites": ["R4C7"],
+				"prerequisites": ["Catography Drones"],
 				"quote": ""
 			},
 			{
-				"name": "R5C8",
+				"name": "Trasportation Comitte",
 				"row": 5,
-				"prerequisites": ["R4C7", "R6C7"],
+				"prerequisites": ["Catography Drones", "Modern Vehicles"],
 				"quote": ""
 			},
 			{
-				"name": "R6C8",
+				"name": "Main Battle Tanks",
 				"row": 6,
-				"prerequisites": ["R6C7"],
+				"prerequisites": ["Modern Vehicles"],
 				"quote": ""
 			},
 			{
-				"name": "R8C8",
+				"name": "Global Texts",
 				"row": 8,
-				"prerequisites": ["R8C6"],
+				"prerequisites": ["Public Transit"],
 				"quote": ""
 			},
 			{
-				"name": "R10C8",
+				"name": "Prosperous Capital",
 				"row": 10,
-				"prerequisites": ["R10C7", "R9C7"],
+				"prerequisites": ["Common Policing", "Urban Planning"],
 				"quote": ""
 			},
 		]
@@ -346,39 +366,39 @@
 		"wonderCost": 105,
 		"techs": [
 			{
-				"name": "R1C9",
+				"name": "Navigation Council",
 				"row": 1,
-				"prerequisites": ["R1C8"],
+				"prerequisites": ["Seafaring Protocols"],
 				"quote": ""
 			},
 			{
-				"name": "R3C9",
+				"name": "Cyber Security",
 				"row": 3,
-				"prerequisites": ["R3C7"],
+				"prerequisites": ["Radio Towers"],
 				"quote": ""
 			},
 			{
-				"name": "R5C9",
+				"name": "General Governance",
 				"row": 5,
-				"prerequisites": ["R5C8"],
+				"prerequisites": ["Trasportation Comitte"],
 				"quote": ""
 			},
 			{
-				"name": "R7C9",
+				"name": "Modernization",
 				"row": 7,
-				"prerequisites": ["R7C7"],
+				"prerequisites": ["Subway Train", "Global Texts"],
 				"quote": ""
 			},
 			{
-				"name": "R9C9",
+				"name": "Weapons Industry",
 				"row": 9,
-				"prerequisites": ["R10C8"],
+				"prerequisites": ["Global Texts", "Prosperous Capital"],
 				"quote": ""
 			},
 			{
-				"name": "R10C9",
+				"name": "Club Headquarters",
 				"row": 10,
-				"prerequisites": ["R10C8"],
+				"prerequisites": ["Prosperous Capital"],
 				"quote": ""
 			},
 		]
@@ -391,39 +411,39 @@
 		"wonderCost": 105,
 		"techs": [
 			{
-				"name": "R3C10",
+				"name": "Agriculture Sector",
 				"row": 3,
-				"prerequisites": ["R3C9"],
+				"prerequisites": ["Cyber Security"],
 				"quote": ""
 			},
 			{
-				"name": "R4C10",
+				"name": "Extended Curriculum",
 				"row": 4,
-				"prerequisites": ["R4C8"],
+				"prerequisites": ["Cyber Security", "Continental Campus"],
 				"quote": ""
 			},
 			{
-				"name": "R6C10",
+				"name": "Armaments Regulation",
 				"row": 6,
-				"prerequisites": ["R6C8"],
+				"prerequisites": ["Main Battle Tanks", "Modernization",],
 				"quote": ""
 			},
 			{
-				"name": "R7C10",
+				"name": "Industrial Machinery",
 				"row": 7,
-				"prerequisites": ["R7C9"],
+				"prerequisites": ["Modernization"],
 				"quote": ""
 			},
 			{
-				"name": "R9C10",
+				"name": "Electronic Warfare",
 				"row": 9,
-				"prerequisites": ["R9C9"],
+				"prerequisites": ["Weapons Industry"],
 				"quote": ""
 			},
 			{
-				"name": "R10C10",
+				"name": "Lunchbox Rations",
 				"row": 10,
-				"prerequisites": ["R10C9"],
+				"prerequisites": ["Club Headquarters"],
 				"quote": ""
 			},
 		]
@@ -436,33 +456,33 @@
 		"wonderCost": 105,
 		"techs": [
 			{
-				"name": "R1C11",
+				"name": "Battleships",
 				"row": 1,
-				"prerequisites": ["R1C9"],
+				"prerequisites": ["Navigation Council"],
 				"quote": ""
 			},
 			{
-				"name": "R3C11",
+				"name": "Logistics Agencies",
 				"row": 3,
-				"prerequisites": ["R3C10"],
+				"prerequisites": ["Agriculture Sector"],
 				"quote": ""
 			},
 			{
-				"name": "R5C11",
+				"name": "Media Literacy",
 				"row": 5,
-				"prerequisites": ["R4C10", "R5C9", "R6C10"],
+				"prerequisites": ["Extended Curriculum", "General Governance", "Armaments Regulation"],
 				"quote": ""
 			},
 			{
-				"name": "R7C11",
+				"name": "Precision Assistant",
 				"row": 7,
-				"prerequisites": ["R7C10"],
+				"prerequisites": ["Industrial Machinery"],
 				"quote": ""
 			},
 			{
-				"name": "R10C11",
+				"name": "Field Deserts",
 				"row": 10,
-				"prerequisites": ["R10C10"],
+				"prerequisites": ["Lunchbox Rations"],
 				"quote": ""
 			},
 		]
@@ -475,33 +495,39 @@
 		"wonderCost": 105,
 		"techs": [
 			{
-				"name": "R2C12",
+				"name": "Maritime Industry",
 				"row": 2,
-				"prerequisites": ["R1C11", "R3C11"],
+				"prerequisites": ["Battleships", "Logistics Agencies"],
 				"quote": ""
 			},
 			{
-				"name": "R4C12",
+				"name": "Military Education",
 				"row": 4,
-				"prerequisites": ["R4C11"],
+				"prerequisites": ["Media Literacy"],
 				"quote": ""
 			},
 			{
-				"name": "R4C12",
-				"row": 4,
-				"prerequisites": ["R5C11"],
+				"name": "Commerce Education",
+				"row": 5,
+				"prerequisites": ["Media Literacy"],
 				"quote": ""
 			},
 			{
-				"name": "R6C12",
+				"name": "History Education",
 				"row": 6,
-				"prerequisites": ["R5C11"],
+				"prerequisites": ["Media Literacy"],
 				"quote": ""
 			},
 			{
-				"name": "R8C12",
+				"name": "Drone Warfare",
 				"row": 8,
-				"prerequisites": ["R7C11", "R9C10"],
+				"prerequisites": ["Precision Assistant", "Electronic Warfare"],
+				"quote": ""
+			},
+			{
+				"name": "Beverage Rations",
+				"row": 10,
+				"prerequisites": ["Field Deserts"],
 				"quote": ""
 			},
 		]
@@ -514,45 +540,39 @@
 		"wonderCost": 105,
 		"techs": [
 			{
-				"name": "R1C13",
+				"name": "Advanced Shipbuilding",
 				"row": 1,
-				"prerequisites": ["R2C12"],
+				"prerequisites": ["Maritime Industry"],
 				"quote": ""
 			},
 			{
-				"name": "R2C13",
+				"name": "Gyro Compass",
 				"row": 2,
-				"prerequisites": ["R2C12"],
+				"prerequisites": ["Maritime Industry"],
 				"quote": ""
 			},
 			{
-				"name": "R3C13",
+				"name": "Refrigeration",
 				"row": 3,
-				"prerequisites": ["R2C12"],
+				"prerequisites": ["Maritime Industry"],
 				"quote": ""
 			},
 			{
-				"name": "R7C13",
+				"name": "Guided Missiles",
 				"row": 7,
-				"prerequisites": ["R8C12"],
+				"prerequisites": ["Drone Warfare"],
 				"quote": ""
 			},
 			{
-				"name": "R8C13",
-				"row": 8,
-				"prerequisites": ["R8C12"],
-				"quote": ""
-			},
-			{
-				"name": "R9C13",
+				"name": "Aerial Defences",
 				"row": 9,
-				"prerequisites": ["R8C12"],
+				"prerequisites": ["Drone Warfare"],
 				"quote": ""
 			},
 			{
-				"name": "R10C13",
+				"name": "Convenient Munitions",
 				"row": 10,
-				"prerequisites": ["R10C11"],
+				"prerequisites": ["Beverage Rations"],
 				"quote": ""
 			},
 		]
@@ -565,27 +585,27 @@
 		"wonderCost": 105,
 		"techs": [
 			{
-				"name": "R2C14",
+				"name": "Sonar Technology",
 				"row": 2,
-				"prerequisites": ["R2C13"],
+				"prerequisites": ["Gyro Compass"],
 				"quote": ""
 			},
 			{
-				"name": "R3C14",
+				"name": "Automated Systems",
 				"row": 3,
-				"prerequisites": ["R3C13"],
+				"prerequisites": ["Refrigeration"],
 				"quote": ""
 			},
 			{
-				"name": "R7C14",
+				"name": "Rocket Science",
 				"row": 7,
-				"prerequisites": ["R7C13"],
+				"prerequisites": ["Guided Missiles"],
 				"quote": ""
 			},
 			{
-				"name": "R9C14",
+				"name": "Specialist Infantry",
 				"row": 9,
-				"prerequisites": ["R9C13"],
+				"prerequisites": ["Aerial Defences"],
 				"quote": ""
 			},
 		]
@@ -598,33 +618,33 @@
 		"wonderCost": 105,
 		"techs": [
 			{
-				"name": "R1C15",
+				"name": "Marine Engineering",
 				"row": 1,
-				"prerequisites": ["R1C13"],
+				"prerequisites": ["Advanced Shipbuilding"],
 				"quote": ""
 			},
 			{
-				"name": "R3C15",
+				"name": "Torpedo Missiles",
 				"row": 3,
-				"prerequisites": ["R3C14"],
+				"prerequisites": ["Automated Systems"],
 				"quote": ""
 			},
 			{
-				"name": "R8C15",
+				"name": "Aircraft",
 				"row": 8,
-				"prerequisites": ["R9C14"],
+				"prerequisites": ["Specialist Infantry"],
 				"quote": ""
 			},
 			{
-				"name": "R9C15",
+				"name": "Anti-Tank Missile",
 				"row": 9,
-				"prerequisites": ["R9C14"],
+				"prerequisites": ["Specialist Infantry"],
 				"quote": ""
 			},
 			{
-				"name": "R10C15",
+				"name": "Armoured Vehicles",
 				"row": 10,
-				"prerequisites": ["R10C13", "R9C14"],
+				"prerequisites": ["Convenient Munitions", "Specialist Infantry"],
 				"quote": ""
 			},
 		]
@@ -637,39 +657,39 @@
 		"wonderCost": 105,
 		"techs": [
 			{
-				"name": "R1C16",
+				"name": "Industrial Irrigation",
 				"row": 1,
-				"prerequisites": ["R1C15"],
+				"prerequisites": ["Marine Engineering"],
 				"quote": ""
 			},
 			{
-				"name": "R2C16",
+				"name": "Submarine",
 				"row": 2,
-				"prerequisites": ["R2C14", "R3C15"],
+				"prerequisites": ["Sonar Technology", "Torpedo Missiles"],
 				"quote": ""
 			},
 			{
-				"name": "R3C16",
+				"name": "Artificial Islands",
 				"row": 3,
-				"prerequisites": ["R3C15"],
+				"prerequisites": ["Torpedo Missiles"],
 				"quote": ""
 			},
 			{
-				"name": "R7C16",
+				"name": "Satellite Systems",
 				"row": 7,
-				"prerequisites": ["R7C14", "R8C15"],
+				"prerequisites": ["Rocket Science", "Aircraft"],
 				"quote": ""
 			},
 			{
-				"name": "R8C16",
+				"name": "Aviation Industry",
 				"row": 8,
-				"prerequisites": ["R8C15"],
+				"prerequisites": ["Aircraft"],
 				"quote": ""
 			},
 			{
-				"name": "R10C16",
+				"name": "Mobile Mortar",
 				"row": 10,
-				"prerequisites": ["R10C15"],
+				"prerequisites": ["Armoured Vehicles"],
 				"quote": ""
 			},
 		]
@@ -682,21 +702,81 @@
 		"wonderCost": 105,
 		"techs": [
 			{
-				"name": "1st Final Tech",
+				"name": "Maritime Archeology",
 				"row": 2,
-				"prerequisites": ["R1C16", "R2C16", "R3C16"],
+				"prerequisites": ["Industrial Irrigation", "Submarine"],
 				"quote": ""
 			},
 			{
-				"name": "2nd Final Tech",
+				"name": "Floating Cities",
+				"row": 3,
+				"prerequisites": ["Artificial Islands"],
+				"quote": ""
+			},
+			{
+				"name": "Perfect Classroom",
 				"row": 5,
-				"prerequisites": ["R4C12", "R6C12"],
+				"prerequisites": ["Military Education", "Commerce Education", "History Education", "Artificial Islands", "Satellite Systems"],
 				"quote": ""
 			},
 			{
-				"name": "3rd Final Tech",
+				"name": "Stealth Bomber",
+				"row": 8,
+				"prerequisites": ["Satellite Systems", "Aviation Industry"],
+				"quote": ""
+			},
+			{
+				"name": "Small Arms Development",
 				"row": 9,
-				"prerequisites": ["R7C16", "R8C16", "R9C15", "R10C16"],
+				"prerequisites": ["Anti-Tank Missile", "Mobile Mortar"],
+				"quote": ""
+			},
+		]
+	},
+	{
+		"columnNumber": 18,
+		"era": "Ninth era",
+		"techCost": 40,
+		"buildingCost": 70,
+		"wonderCost": 105,
+		"techs": [
+			{
+				"name": "Globalization",
+				"row": 2,
+				"prerequisites": ["Maritime Archeology", "Floating Cities"],
+				"quote": ""
+			},
+			{
+				"name": "Personal Tutor",
+				"row": 4,
+				"prerequisites": ["Perfect Classroom"],
+				"quote": ""
+			},
+			{
+				"name": "Eligma Excavation",
+				"row": 6,
+				"prerequisites": ["Perfect Classroom"],
+				"quote": ""
+			},
+			{
+				"name": "Thermal Scopes",
+				"row": 8,
+				"prerequisites": ["Stealth Bomber", "Small Arms Development"],
+				"quote": ""
+			},
+		]
+	},
+	{
+		"columnNumber": 19,
+		"era": "Tenth era",
+		"techCost": 40,
+		"buildingCost": 70,
+		"wonderCost": 105,
+		"techs": [
+			{
+				"name": "World Library",
+				"row": 5,
+				"prerequisites": ["Globalization", "Personal Tutor", "Eligma Excavation", "Thermal Scopes"],
 				"quote": ""
 			},
 		]

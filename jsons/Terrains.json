@@ -7,6 +7,7 @@
 		"gold": 1,
 		"movementCost": 1,
 		"RGB": [43, 87, 151]
+		"uniques": ["Becomes [Fish] when adjacent to [Coast]"]
 	},
 	{
 		"name": "Coast",
@@ -153,6 +154,37 @@
             "Every [17] tiles with this terrain will receive a major deposit of a strategic resource.",
             "Never receives any resources <in [Hill] tiles>"]
 	},
+	
+	// Blue Archive Terrain Features
+	{
+		"name": "Mud",
+		"type": "TerrainFeature",
+		"movementCost": 4,
+		"unbuildable": true,
+		"defenceBonus": -0.15,
+		"occursOn": ["Plains"],
+		"uniques": ["Rough terrain", "Rare feature",
+					"[+6] to Fertility for Map Generation",
+					"Every [10] tiles with this terrain will receive a major deposit of a strategic resource."
+					],
+	},
+	{
+		"name": "Fish",
+		"type": "TerrainFeature",
+		"movementCost": 2,
+		"food": 1,
+		"occursOn": ["Coast","Atoll"],
+		"uniques": ["Vegetation", "Water resource",
+					"[-1] to Fertility for Map Generation",
+					"A Region is formed with at least [70]% [Fish] tiles, with priority [3]",
+					"Considered [Desirable] when determining start locations",
+					"Considered [Food] when determining start locations",
+					"Considered [Food] when determining start locations <in [Fish] Regions>",
+					"Considered [Food] when determining start locations <in [Tundra] Regions>",
+					"Every [20] tiles with this terrain will receive a major deposit of a strategic resource."
+					]
+	},
+	////////////////////
 
 	// Terrain features
 	{

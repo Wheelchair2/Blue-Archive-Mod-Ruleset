@@ -1,0 +1,14 @@
+{
+	"useColorAsBaseTerrain": "false",
+		"ruleVariants": {		
+		
+		
+		//Farms
+		"Desert+Flood plains+Farm": ["Desert", "Flood plains", "Farm"],
+		"Desert+Flood plains+Wheat+Farm": ["Desert", "Flood plains", "Wheat", "Farm"],
+		"Desert+Wheat+Farm": ["Desert", "Wheat", "Farm"], //why even does this exist
+		"Grassland+Wheat+Farm": ["Grassland", "Wheat", "Farm"],
+		"Plains+Wheat+Farm": ["Plains", "Wheat", "Farm"],
+		
+	}
+}
